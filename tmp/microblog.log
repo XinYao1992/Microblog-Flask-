@@ -1,0 +1,89 @@
+2017-06-29 21:58:28,236 INFO: microblog startup [in /Users/xinyao/Desktop/microblog/myapp/__init__.py:40]
+2017-06-29 21:58:54,713 INFO: microblog startup [in /Users/xinyao/Desktop/microblog/myapp/__init__.py:40]
+2017-06-29 21:59:51,479 INFO: microblog startup [in /Users/xinyao/Desktop/microblog/myapp/__init__.py:40]
+2017-06-29 22:01:06,774 ERROR: Exception on /edit [POST] [in /Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/xinyao/Desktop/microblog/myapp/views.py", line 176, in edit
+    if form.validate_on_submit():
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask_wtf/form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/xinyao/Desktop/microblog/myapp/forms.py", line 24, in validate
+    user = User.query.filter_by(nickname=self.nickname.data).first()
+NameError: global name 'User' is not defined
+2017-06-29 22:01:21,188 ERROR: Exception on /edit [POST] [in /Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/xinyao/Desktop/microblog/myapp/views.py", line 176, in edit
+    if form.validate_on_submit():
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask_wtf/form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/xinyao/Desktop/microblog/myapp/forms.py", line 24, in validate
+    user = User.query.filter_by(nickname=self.nickname.data).first()
+NameError: global name 'User' is not defined
+2017-06-29 22:01:31,258 ERROR: Exception on /edit [POST] [in /Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/xinyao/Desktop/microblog/myapp/views.py", line 176, in edit
+    if form.validate_on_submit():
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask_wtf/form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/xinyao/Desktop/microblog/myapp/forms.py", line 24, in validate
+    user = User.query.filter_by(nickname=self.nickname.data).first()
+NameError: global name 'User' is not defined
+2017-06-29 22:01:50,470 ERROR: Exception on /edit [POST] [in /Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/xinyao/Desktop/microblog/myapp/views.py", line 176, in edit
+    if form.validate_on_submit():
+  File "/Users/xinyao/Desktop/microblog/flask/lib/python2.7/site-packages/flask_wtf/form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/xinyao/Desktop/microblog/myapp/forms.py", line 24, in validate
+    user = User.query.filter_by(nickname=self.nickname.data).first()
+NameError: global name 'User' is not defined
+2017-06-29 22:07:47,366 INFO: microblog startup [in /Users/xinyao/Desktop/microblog/myapp/__init__.py:40]
+2017-06-29 22:38:31,150 INFO: microblog startup [in /Users/xinyao/Desktop/microblog/myapp/__init__.py:40]
